@@ -1,0 +1,14 @@
+@media screen and (max-width: 900px) {
+  .hero-div {
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-info-div {
+    padding: 0;
+  }
+}
