@@ -41,7 +41,7 @@
   --fw-2: 400;
   
   /* ##font family */
-  --ff: ogg, sans-serif, 'Courier New', Courier, monospace; 
+  --ff: ogg, 'Courier New', Courier, monospace; 
 }
 
 /* reset */
