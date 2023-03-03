@@ -8,6 +8,27 @@
     align-items: center;
   }
 
+  .hero-div::before {
+    content: "Funmi & Ayo";
+    top: 15%;
+    left: 5%;
+    width: fit-content;
+    height: auto;
+    text-align: center;
+    font-size: 120px;
+    line-height: var(--lh-5);
+    font-weight: var(--fw-2);
+    color: var(--funmi-ayo);
+    /* opacity: 0.2; */
+    position: absolute;
+    z-index: 1;
+    flex-wrap: wrap;
+    text-overflow: clip;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+  }
+
   .hero-info-div {
     padding: 0;
   }
@@ -20,7 +41,153 @@
     overflow: hidden;
   }
   
+
+}
+
+@media screen and (max-width: 760px) {
+    .hero-image {
+    width: 243px;
+  }
+
+  .hero-div::before {
+    content: "Funmi & Ayo";
+    top: 15%;
+    left: 5%;
+    width: fit-content;
+    height: auto;
+    text-align: center;
+    font-size: 100px;
+    line-height: var(--lh-5);
+    font-weight: var(--fw-2);
+    color: var(--funmi-ayo);
+    /* opacity: 0.2; */
+    position: absolute;
+    z-index: 1;
+    flex-wrap: wrap;
+    text-overflow: clip;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .container {
+    width: 90%;
+  }
+
+  .hero-div::before {
+    display: none;
+  }
+
+  .hero-image-container {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .hero-image-container::before {
+    content: "Funmi & Ayo";
+    top: 35%;
+    left: 15%;
+    width: fit-content;
+    height: auto;
+    text-align: center;
+    font-size: 60px;
+    line-height: var(--lh-4);
+    font-weight: var(--fw-2);
+    color: var(--funmi-ayo);
+    /* opacity: 0.2; */
+    position: absolute;
+    z-index: 1;
+    flex-wrap: wrap;
+    text-overflow: clip;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+  }
+
   .hero-image {
-    position: sticky;
+    width: 100%;
+  }
+
+  .hero-footer {
+    display: none;
+  }
+
+  .hero-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    margin: 0 0 20px 0;
+  }
+
+  .info-div {
+    /* padding: 50px 0; */
+    max-width: 250px;
+    text-align: left;
+  }
+
+  .holding-section {
+    margin: 0;
+    gap: 50px;
+    text-align: left;
+    display: flex;
+    justify-content: left;
+    align-items: auto;
+    flex-direction: column-reverse;
+  }
+
+  .holding-container {
+    width: 100%;
+  }
+
+  .holding-image {
+    width: 100%;
+  }
+
+  .gallery-heading {
+    font-size: 60px;
+  }
+
+  .gallery-container {
+    width: 100%;
+  }
+
+  .gallery-image {
+    width: 260px;
+  }
+
+  .footer::before {
+    content: "Funmi & Ayo";
+    top: 0;
+    left: 0;
+    width: fit-content;
+    height: auto;
+    text-align: center;
+    font-size: 100px;
+    line-height: var(--lh-6);
+    font-weight: var(--fw-2);
+    color: var(--funmi-ayo);
+    opacity: 0.2;
+    position: static;
+    z-index: 1;
+    flex-wrap: wrap;
+    text-overflow: clip;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 0;
+    flex-wrap: wrap;
+    padding: 0 10px;
   }
 }
